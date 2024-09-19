@@ -7,19 +7,20 @@
 
 #include "BKG.h"
 
+#include "AutPI.h"
 #include "cave_story.h"
 #include "main.h"
 
 bool isLoadingSave = false;
 
-const char* gBkgSaveFileName = "Profile.BKG.dat";
+const char* gBkgSaveFileName = "BKG";
 
 void SaveBkgFile()
 {
 	FILE* fp;
 
 	char path[MAX_PATH];
-	sprintf(path, "%s\\%s", gSavePath, gBkgSaveFileName);
+	sprintf(path, "%s\\%s.%s", gSavePath, GetCustomSaveName(), gBkgSaveFileName);
 
 	fp = fopen(path, "wb");
 	if (fp == NULL)
@@ -37,7 +38,7 @@ void LoadBkgFile()
 	FILE* fp;
 
 	char path[MAX_PATH];
-	sprintf(path, "%s\\%s", gSavePath, gBkgSaveFileName);
+	sprintf(path, "%s\\%s.%s", gSavePath, GetCustomSaveName(), gBkgSaveFileName);
 
 	fp = fopen(path, "rb");
 	if (fp == NULL)
