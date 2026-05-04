@@ -1,5 +1,6 @@
 /.git
 /.vs
+/build*
 /Debug
 /Release
 /ZZ-FinalRelease
@@ -20,3 +21,5 @@ CaveStory/window.rect
 !CaveStory/mods/mod/mod.dll
 !CaveStory/mods/mod/settings.ini
 !external/lua/lua.lib
+!CaveStory/mods/mod_loader.dll
+!CaveStory/dsound.dll

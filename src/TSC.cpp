@@ -1,6 +1,6 @@
 
 
-#include <Windows.h>
+#include <windows.h>
 #include <shlwapi.h>
 #include <stddef.h>
 #include <stdio.h>

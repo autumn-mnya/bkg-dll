@@ -1,4 +1,4 @@
-#include <Windows.h>
+#include <windows.h>
 #include <stddef.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -14,7 +14,7 @@ extern "C"
 
 #include "Lua.h"
 
-#include "../Main.h"
+#include "../main.h"
 #include "../mod_loader.h"
 #include "../cave_story.h"
 
